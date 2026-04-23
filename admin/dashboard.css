@@ -1,0 +1,136 @@
+  body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      margin: 0;
+      padding: 0;
+  }
+
+  header {
+      background: #161b22;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #30363d;
+  }
+
+  header h1 {
+      margin: 0;
+      color: #58a6ff;
+  }
+
+  header button {
+      background: #f85149;
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+
+  header button:hover {
+      background: #da3633;
+  }
+
+  .container {
+      padding: 30px;
+  }
+
+  h2 {
+      color: #79c0ff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 5px;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: #161b22;
+      border-radius: 8px;
+      overflow: hidden;
+  }
+
+  th,
+  td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #30363d;
+  }
+
+  th {
+      background: #21262d;
+      color: #79c0ff;
+  }
+
+  tr:hover {
+      background: #1c2128;
+  }
+
+  .btn {
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 5px;
+  }
+
+  .btn-delete {
+      background: #f85149;
+  }
+
+  .btn-delete:hover {
+      background: #da3633;
+  }
+
+  .btn-approve {
+      background: #238636;
+  }
+
+  .btn-approve:hover {
+      background: #2ea043;
+  }
+
+  .btn-reject {
+      background: #8b949e;
+  }
+
+  .btn-reject:hover {
+      background: #6e7681;
+  }
+
+  form.add-item {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+  }
+
+  input,
+  select {
+      background: #0d1117;
+      color: #e6edf3;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 8px;
+      width: calc(33% - 10px);
+      margin: 5px;
+  }
+
+  button.submit-btn {
+      background: #238636;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+  }
+
+  button.submit-btn:hover {
+      background: #2ea043;
+  }

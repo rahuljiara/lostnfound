@@ -1,0 +1,332 @@
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 65px);
+    height: fit-content;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.hero-left,
+.hero-right {
+    width: 50%;
+    min-height: 300px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-left h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #e7d77c;
+}
+
+.hero-left span {
+    color: #FFF3E0;
+}
+
+.hero-left p {
+    margin-top: 15px;
+    color: #a4a4a4;
+}
+
+
+
+/* BUTTONS */
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 190px;
+    transition: .3s;
+}
+
+.btn img {
+    height: 40px;
+}
+
+.discover {
+    margin-top: 20px;
+    background-color: rgb(0, 139, 157);
+}
+
+.lost {
+    background: #e3574f;
+}
+
+.found {
+    background: #3bc248;
+}
+
+.btn:hover {
+    transform: scale(1.01);
+    transition: .3s;
+}
+
+
+/* IMAGE STACK */
+.image-stack-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.image-stack {
+    position: relative;
+    width: 490px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-stack img {
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img1 {
+    left: 0;
+    top: 0;
+    transition: .3s;
+}
+
+.img2 {
+    left: 120px;
+    top: 50px;
+    transition: .3s;
+}
+
+.img3 {
+    left: 240px;
+    top: 100px;
+    transition: .3s;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover {
+    transform: scale(1.2);
+    z-index: 100;
+    transition: .3s;
+}
+
+
+/* WHY USE LOST & FOUND SECTION */
+
+.features {
+    width: 100%;
+    padding: 80px 40px;
+    background: #f3f4f6;
+    text-align: center;
+}
+
+.features-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.features-header p {
+    max-width: 600px;
+    margin: auto;
+    color: #6b7280;
+}
+
+.features-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 320px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: .3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background: #dbeafe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* HOW IT WORKS SECTION */
+
+.how-it-works {
+    width: 100%;
+    padding: 80px 40px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.step-card {
+    width: 260px;
+}
+
+.step-number {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.step-card p {
+    color: #6b7280;
+}
+
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-left h1 {
+        font-size: 42px;
+    }
+
+    .hero-left p {
+        font-size: 15px;
+    }
+
+    .action-buttons {
+        align-items: center;
+    }
+
+    .image-stack {
+        margin-top: 40px;
+    }
+
+    .features-container {
+        gap: 20px;
+    }
+
+    .steps-container {
+        gap: 40px;
+    }
+
+}
+
+/* Phones */
+
+@media (max-width: 600px) {
+
+    .hero-left h1 {
+        font-size: 32px;
+    }
+
+    .hero-left p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .btn {
+        width: 160px;
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+
+    .btn img {
+        height: 30px;
+    }
+
+    .features-header h2,
+    .how-it-works h2 {
+        font-size: 28px;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
+    }
+
+    .step-card {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .feature-icon {
+        margin: auto;
+    }
+
+}
